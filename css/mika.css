@@ -1,0 +1,198 @@
+body {
+    background-color: #c4c4c4;
+    font-family: "Comic Sans MS";
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sub-menu {
+    position: absolute;
+    width: 20%;
+    border: 1px solid #000000;
+    border-right-style: none;
+    text-align: center;
+    padding: 10px 0;
+    overflow: hidden;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sub-menu:before,
+.sub-menu:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    background-color: #000000;
+}
+
+.sub-menu:before {
+    left: 15px;
+}
+
+.sub-menu:after {
+    right: 15px;
+}
+
+.sub-menu:last-child {
+    border-right-style: solid;
+}
+
+.sub-menu.active span {
+    background-color: white;
+    padding: 0 3px;
+    border-radius: 4px;
+}
+
+.sub-menu.red {
+    background-color: red;
+}
+
+.sub-menu.yellow {
+    background-color: yellow;
+    left: 20%;
+}
+
+.sub-menu.purple {
+    background-color: purple;
+    left: 40%;
+}
+
+.sub-menu.blue {
+    background-color: blue;
+    left: 60%;
+}
+
+.sub-menu.green {
+    background-color: green;
+    left: 80%;
+}
+
+.mobile-menu{
+    border:1px solid #000000;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+}
+.mobile-sub-menus{
+    position: absolute;
+    top:50px;
+    width: 100%;
+}
+.mobile-sub-menu{
+    display: block;
+    width:100%;
+    border: 1px solid #000000;
+}
+
+.mobile-sub-menu.red {
+    background-color: red;
+}
+
+.mobile-sub-menu.yellow {
+    background-color: yellow;
+}
+
+.mobile-sub-menu.purple {
+    background-color: purple;
+}
+
+.mobile-sub-menu.blue {
+    background-color: blue;
+}
+
+.mobile-sub-menu.green {
+    background-color: green;
+}
+
+.content {
+    display: none;
+    text-align: center;
+    margin: 60px 0 10px 0;
+}
+
+.page {
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.page>.inner {
+    border: 1px dashed black;
+    margin: 10px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.words-table {
+    display: table;
+    width: 100%;
+}
+
+.word-circle {
+    display: table-cell;
+    width: 33.3%;
+    text-align: center;
+}
+
+.word {
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.word:hover {
+    background-color: #fff;
+}
+
+
+/* mobile */
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+    .menu{
+        height: 50px;
+    }
+    .word {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        border-radius: 40px;
+        border: 1px solid #000000;
+        display: inline-block;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+}
+
+
+/* desktop */
+
+@media (min-width: 769px) {
+    .mobile-only {
+        display: none;
+    }
+    .menu{
+        height: 60px;
+    }
+    .word {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        border-radius: 60px;
+        border: 1px solid #000000;
+        display: inline-block;
+        font-size: 23px;
+        margin: 20px;
+    }
+}
