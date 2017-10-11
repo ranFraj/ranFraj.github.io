@@ -5,9 +5,9 @@ var wordpages = {
     blue: ['All', 'Eat', 'No', 'Now', 'That', 'This', 'Was', 'Well', 'What', 'Yes'],
     green: ['Please', 'Pretty', 'Ride', 'New', 'Say', 'So', 'Soon', 'Too', 'Under', 'White']
 }
-$(document).ready(function () {
+$(document).ready(function() {
     responsiveVoice.setDefaultVoice("US English Female");
-    $(".word").click(function () {
+    $(".word").click(function() {
         playWord($(this));
     });
     var isMobile = $(".mobile-menu").is(":visible");
@@ -15,12 +15,17 @@ $(document).ready(function () {
 })
 
 function playWord(button) {
-    var word = button.text();
-    button.html("<img src='img/play.png' />");
-    responsiveVoice.speak(word);
-    setTimeout(function () {
-        button.html(word);
-    }, 500);
+    var isPlaying = button.data("status") === "playing";
+    if (!isPlaying) {
+        var word = button.text();
+        button.html("<img src='img/play.png' />");
+        button.data("status", "playing")
+        responsiveVoice.speak(word);
+        setTimeout(function() {
+            button.html(word);
+            button.data("status", "ready");
+        }, 500);
+    }
 }
 
 function selectSubMenu(crayon, button) {
@@ -32,7 +37,7 @@ function selectSubMenu(crayon, button) {
     drawWordsPage(crayon);
     if (isMobile) {
         $menuButton.css("background-color", crayon).text(crayon);
-        if($menu.hasClass("show")){
+        if ($menu.hasClass("show")) {
             $menuButton.trigger("click");
         }
     } else {
