@@ -48,4 +48,7 @@ function playWord(button) {
     }
 }
 
-$(document).ready(fillWords);
+$(document).ready(function() {
+    responsiveVoice.setDefaultVoice("US English Female");
+    fillWords();
+});
