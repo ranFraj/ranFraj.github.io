@@ -1,0 +1,32 @@
+body {
+    font-family: "Comic Sans MS";
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    margin: 8px 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.word {
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+}
+
+.word img {
+    width: 23px;
+    height: 23px;
+}
+
+
+/* mobile */
+
+@media (max-width: 600px) {
+    body {
+        margin: 8px 8px;
+    }
+}
