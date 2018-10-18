@@ -78,6 +78,7 @@ class App {
 
     setPageTitle() {
         $('h1').text(`Fry Words - The ${this.getPageWord(this.lastList)} Hundred`);
+        window.scrollTo(0, 0);
     }
 
     init() {
