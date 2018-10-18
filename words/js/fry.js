@@ -38,11 +38,13 @@ class App {
     playButton(button) {
         const $button = $(button);
         if ($button.data('status') !== 'playing') {
+            $button.attr('data-status', 'playing');
             $button.removeClass('glyphicon-play');
             const word = $button.data('word');
             responsiveVoice.speak(word);
             setTimeout(() => {
                 $button.addClass('glyphicon-play');
+                $button.attr('data-status', 'standby');
             }, 500);
         }
     }
