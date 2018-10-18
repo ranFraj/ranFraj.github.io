@@ -88,5 +88,6 @@ class App {
 const app = new App();
 
 $(document).ready(() => {
+    responsiveVoice.setDefaultVoice("US English Female");
     app.init();
 });
