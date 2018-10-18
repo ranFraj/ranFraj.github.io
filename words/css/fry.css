@@ -1,0 +1,46 @@
+body {
+    margin: 0 50px;
+    font-size: 30px;
+}
+
+main {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.next-button,
+.prev-button {
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    display: table;
+    border: none;
+    z-index: 1;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+.next-button span,
+.prev-button span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+th {
+    text-align: center;
+    font-weight: bold;
+}
+
+.play-button {
+    float: right;
+}
