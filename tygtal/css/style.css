@@ -200,35 +200,82 @@ figure {
 }
 
 .program-box {
-  margin-bottom: 10%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 30px;
+  margin: 0 10% 8% 10%;
 }
-
-.program-box a img {
-  -webkit-transition: -moz-transform 0.3s ease-out;
-  -moz-transition: -webkit-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  border-radius: 50px;
+@media screen and (max-width: 480px) {
+  .program-box {
+    margin: 0 0 8% 0;
+  }
 }
-
-.program-box a:hover img {
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.program-box p {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.program-box p.title {
   color: white;
   font-size: 30px;
-  text-shadow: 5px 5px 5px #000;
   font-weight: bold;
-  overflow: hidden;
+  margin: 0;
+}
+.program-box p.description {
+  font-size: 17px;
+  margin: 10px;
+  text-shadow: 2px 2px black;
+}
+
+.program-box.adult {
+  background-image: url(../images/adult.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 50%;
+  padding-right: 20%;
+}
+@media screen and (max-width: 480px) {
+  .program-box.adult {
+    background-size: 100%;
+    padding-right: 0;
+  }
+}
+
+.program-box.kids {
+  background-image: url(../images/kids.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 30%;
+  padding-right: 20%;
+}
+@media screen and (max-width: 480px) {
+  .program-box.kids {
+    background-size: 55%;
+    padding-right: 0;
+  }
+}
+
+.program-box.college {
+  background-image: url(../images/college.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 30%;
+  padding-right: 20%;
+}
+@media screen and (max-width: 480px) {
+  .program-box.college {
+    background-size: 55%;
+    padding-right: 0;
+  }
+}
+
+.program-box.pro {
+  background-image: url(../images/professinal.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 50%;
+  padding-right: 20%;
+}
+@media screen and (max-width: 480px) {
+  .program-box.pro {
+    background-size: 100%;
+    padding-right: 0;
+  }
 }
 
 /* Superfish Override Menu */
@@ -522,6 +569,7 @@ figure {
 #fh5co-team-section,
 #fh5co-blog-section,
 #fh5co-owners-section,
+#fh5co-bio-section,
 #fh5co-contact {
   padding: 7em 0;
 }
@@ -531,6 +579,7 @@ figure {
 #fh5co-team-section,
 #fh5co-blog-section,
 #fh5co-owners-section,
+#fh5co-bio-section,
 #fh5co-contact {
     padding: 4em 0;
   }
@@ -542,8 +591,19 @@ figure {
   }
 }
 
+#fh5co-bio-section img,
 #fh5co-owners-section img {
   width: 100%;
+}
+
+#fh5co-bio-section h2 {
+  margin-top: 20px;
+}
+#fh5co-bio-section .fh5co-social-icons > a {
+  color: #000;
+}
+#fh5co-bio-section .fh5co-social-icons > a i {
+  font-size: 50px;
 }
 
 .fh5co-lightgray-section {
