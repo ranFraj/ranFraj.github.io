@@ -161,3 +161,10 @@
 
 
 }());
+
+function expand(section) {
+    var box = $('.' + section);
+    box.find('.learn').hide();
+    box.find('.description.short').hide();
+    box.find('.long').show();
+}
