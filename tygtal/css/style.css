@@ -229,7 +229,7 @@ figure {
   font-size: 16px;
 }
 .program-box .learn {
-  margin: 40px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 .program-box .pricing {
   margin-top: 40px;
@@ -290,6 +290,53 @@ figure {
     background-size: 100%;
     padding-right: 0;
   }
+}
+
+.price-box {
+  text-align: center;
+  margin: 20px 0;
+}
+.price-box h2 {
+  color: #848484;
+  text-align: center;
+}
+.price-box .box {
+  position: relative;
+  text-align: left;
+  border: #4CB648 solid 12px;
+  border-radius: 10px;
+}
+.price-box .box .footnote {
+  font-size: 12px;
+  position: absolute;
+  top: 180px;
+  right: 10px;
+}
+.price-box .box .price-title {
+  padding: 20px;
+  background-color: #fff;
+}
+.price-box .box .price-amount {
+  font-size: 42px;
+  text-align: center;
+  margin: 30px;
+}
+.price-box .box .price-desc {
+  background-color: #848484;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  line-height: 26px;
+}
+.price-box .box .pdf {
+  min-height: 80px;
+  background-image: url(../images/form.png);
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  line-height: 30px;
+  padding: 20px 0 20px 90px;
+  font-size: 24px;
 }
 
 /* Superfish Override Menu */
@@ -583,6 +630,8 @@ figure {
 #fh5co-team-section,
 #fh5co-blog-section,
 #fh5co-owners-section,
+#fh5co-pricing-section,
+#fh5co-forms-section,
 #fh5co-bio-section,
 #fh5co-contact {
   padding: 7em 0;
@@ -593,6 +642,8 @@ figure {
 #fh5co-team-section,
 #fh5co-blog-section,
 #fh5co-owners-section,
+#fh5co-pricing-section,
+#fh5co-forms-section,
 #fh5co-bio-section,
 #fh5co-contact {
     padding: 4em 0;
