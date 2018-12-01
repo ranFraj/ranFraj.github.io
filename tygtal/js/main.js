@@ -151,9 +151,11 @@
 
     var loopCoachImages = function() {
         var coaches = $('.coach-images');
-        var topImage;
+        var bottomImage, topImage;
         if (coaches.length > 0) {
+            bottomImage = coaches.find('.bottom');
             topImage = coaches.find('.top');
+            topImage.css('width', bottomImage.width() + 'px');
             setInterval(function() {
                 topImage.css('opacity', parseInt(topImage.css('opacity')) === 0 ? 1 : 0);
             }, 4000);

@@ -341,11 +341,9 @@ figure {
 
 /* coach images */
 .coach-images {
-  position: relative;
+  margin-bottom: 20px;
 }
 .coach-images img {
-  position: absolute;
-  left: 0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -353,6 +351,8 @@ figure {
 }
 .coach-images img.top {
   opacity: 0;
+  position: absolute;
+  top: 0;
 }
 
 /* Superfish Override Menu */
