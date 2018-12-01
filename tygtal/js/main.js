@@ -149,6 +149,17 @@
         });
     };
 
+    var loopCoachImages = function() {
+        var coaches = $('.coach-images');
+        var topImage;
+        if (coaches.length > 0) {
+            topImage = coaches.find('.top');
+            setInterval(function() {
+                topImage.css('opacity', parseInt(topImage.css('opacity')) === 0 ? 1 : 0);
+            }, 4000);
+        }
+    }
+
     // Document on load.
     $(function() {
         mainMenu();
@@ -157,6 +168,7 @@
         mobileMenuOutsideClick();
         contentWayPoint();
         scheduleTab();
+        loopCoachImages();
     });
 
 

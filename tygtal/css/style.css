@@ -339,6 +339,22 @@ figure {
   font-size: 24px;
 }
 
+/* coach images */
+.coach-images {
+  position: relative;
+}
+.coach-images img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.coach-images img.top {
+  opacity: 0;
+}
+
 /* Superfish Override Menu */
 .sf-menu {
   margin: 0 !important;
