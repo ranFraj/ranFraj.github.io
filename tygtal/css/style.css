@@ -217,16 +217,21 @@ figure {
   margin: 0;
 }
 .program-box p.description {
+  color: #fff;
+  text-shadow: 2px 2px #000;
   font-size: 17px;
   margin: 10px;
   text-shadow: 2px 2px black;
 }
 .program-box .long {
-  color: #848484;
+  color: #fff;
+  text-shadow: 2px 2px #000;
   display: none;
 }
 .program-box .long li {
   font-size: 16px;
+  color: #fff;
+  text-shadow: 2px 2px #000;
 }
 .program-box .learn {
   margin: 20px 0 20px 0;
@@ -237,10 +242,10 @@ figure {
 }
 
 .program-box.adult {
-  background-image: url(../images/adult.png);
+  background-image: url(../images/adult.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 50%;
+  background-size: contain;
   padding-right: 20%;
 }
 @media screen and (max-width: 480px) {
