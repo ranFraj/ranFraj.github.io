@@ -353,11 +353,13 @@ figure {
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+  display: block;
 }
 .coach-images img.top {
   opacity: 0;
   position: absolute;
   top: 0;
+  display: block;
 }
 
 /* Superfish Override Menu */
