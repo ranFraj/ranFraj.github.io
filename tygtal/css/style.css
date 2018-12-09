@@ -204,6 +204,7 @@ figure {
   color: #fff;
   padding: 20px 30px;
   margin: 0 10% 8% 10%;
+  border-radius: 18px;
 }
 @media screen and (max-width: 480px) {
   .program-box {
@@ -245,7 +246,7 @@ figure {
   background-image: url(../images/adult.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: contain;
+  background-size: 50%;
   padding-right: 20%;
 }
 @media screen and (max-width: 480px) {
@@ -270,24 +271,17 @@ figure {
 }
 
 .program-box.college {
-  background-image: url(../images/college.png);
+  background-image: url(../images/college.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 30%;
   padding-right: 20%;
-}
-@media screen and (max-width: 480px) {
-  .program-box.college {
-    background-size: 55%;
-    padding-right: 0;
-  }
+  padding-right: 0;
 }
 
 .program-box.pro {
   background-image: url(../images/professinal.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 50%;
   padding-right: 20%;
 }
 @media screen and (max-width: 480px) {
