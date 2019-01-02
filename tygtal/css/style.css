@@ -356,6 +356,20 @@ figure {
   display: block;
 }
 
+#balls-section {
+  background-image: url(../images/balls.jpg);
+  text-align: center;
+  margin-top: 40px;
+}
+#balls-section div {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#balls-section h3 {
+  color: #fff;
+  padding: 10%;
+  font-size: 30px;
+}
+
 /* Superfish Override Menu */
 .sf-menu {
   margin: 0 !important;
