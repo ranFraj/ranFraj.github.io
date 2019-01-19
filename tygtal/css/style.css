@@ -358,6 +358,7 @@ figure {
 
 #balls-section {
   background-image: url(../images/balls.jpg);
+  background-position: 80%;
   text-align: center;
   margin-top: 40px;
 }
@@ -657,7 +658,7 @@ figure {
 }
 
 #fh5co-programs-section,
-#fh5co-schedule-section,
+#fh5co-welcome-section,
 #fh5co-team-section,
 #fh5co-blog-section,
 #fh5co-owners-section,
@@ -669,7 +670,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   #fh5co-programs-section,
-#fh5co-schedule-section,
+#fh5co-welcome-section,
 #fh5co-team-section,
 #fh5co-blog-section,
 #fh5co-owners-section,
@@ -678,6 +679,19 @@ figure {
 #fh5co-bio-section,
 #fh5co-contact {
     padding: 4em 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-programs-section .btn,
+#fh5co-welcome-section .btn,
+#fh5co-team-section .btn,
+#fh5co-blog-section .btn,
+#fh5co-owners-section .btn,
+#fh5co-pricing-section .btn,
+#fh5co-forms-section .btn,
+#fh5co-bio-section .btn,
+#fh5co-contact .btn {
+    width: 100%;
   }
 }
 
