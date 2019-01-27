@@ -162,6 +162,50 @@
         }
     }
 
+    var setupMessageForm = function() {
+        var sendMessage = function(values) {
+            var $form = $('#hidden_message_form');
+            var $box = $('.message-box');
+            $box.html('<div class="text-center">Sending message...</div>');
+            $form.find("input[type='email']").val(values.messageEmail);
+            $form.find('textarea').text(values.messageName + ' left a message:\n' + values.messageBody);
+            $form.submit();
+            setTimeout(function() {
+                $box.html('<div class="text-center"><h3>Thank you!</h3>We will get back to you as soon as possible</div>');
+            }, 2000);
+            console.log(values);
+        };
+        var clearValidation = function() {
+            $('.invalid-input').remove();
+        }
+        var $form = $('#message_form');
+        if ($form.length > 0) {
+            $form.submit(function(e) {
+                e.preventDefault();
+                var isValid = true;
+                var $inputs = $form.find("input:text, input[type='email'], textarea");
+                $inputs.on('blur', function() {
+                    clearValidation();
+                });
+                var values = {};
+                clearValidation();
+                $inputs.each(function() {
+                    var $value = $(this);
+                    if ($value.val().length === 0) {
+                        $value.focus();
+                        $('<div class="invalid-input">Missing ' + this.name.replace('message', '') + '</div>').insertAfter($value);
+                        isValid = false;
+                        return false;
+                    }
+                    values[this.name] = $(this).val();
+                });
+                if (isValid) {
+                    sendMessage(values);
+                }
+            });
+        }
+    }
+
     // Document on load.
     $(function() {
         mainMenu();
@@ -171,6 +215,7 @@
         contentWayPoint();
         scheduleTab();
         loopCoachImages();
+        setupMessageForm();
     });
 
 

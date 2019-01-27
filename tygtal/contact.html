@@ -15,17 +15,6 @@
     <meta name="keywords" content="Gym, Fit, Weights, Aerobics" />
     <meta name="author" content="Ran Frajman" />
 
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
-
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
 
@@ -80,14 +69,6 @@
                                             <li><a href="pricing.html#fh5co-forms-section">Download Forms</a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <a href="classes.html" class="fh5co-sub-ddown">Media</a>
-                                        <ul class="fh5co-sub-menu">
-                                            <li><a href="#">News</a></li>
-                                            <li><a href="#">Achievements</a></li>
-                                            <li><a href="#">Professional Athletes</a></li>
-                                        </ul>
-                                    </li>
                                     <li class="active"><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
@@ -113,20 +94,48 @@
             <!-- end:fh5co-hero -->
             <div id="fh5co-contact">
                 <div class="container">
-                    <form action="#">
-                        <div class="row">
-                            <div class="col-md-12 animate-box">
-                                <h3 class="section-title">Our Address</h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <ul class="contact-info">
-                                    <li><i class="icon-location-pin"></i>215 Hembree Park Dr #145, Roswell, GA 30076</li>
-                                    <li><i class="icon-phone2"></i>(678) 761-7727</li>
-                                    <li><i class="icon-mail"></i><a href="mailto:tygtalperformance@gmail.com">tygtalperformance@gmail.com</a></li>
-                                    <li><i class="icon-globe2"></i><a href="http://www.tygtal.com">www.tygtal.com</a></li>
-                                </ul>
+                    <div class="row">
+                        <div class="col-md-6 animate-box">
+                            <h3 class="section-title">Our Address</h3>
+                            <ul class="contact-info">
+                                <li><i class="icon-location-pin"></i>215 Hembree Park Dr #145, Roswell, GA 30076</li>
+                                <li><i class="icon-phone2"></i><a href="tel:+6787617727">(678) 761-7727</a></li>
+                                <li><i class="icon-mail"></i><a href="mailto:tygtalperformance@gmail.com">tygtalperformance@gmail.com</a></li>
+                                <li><i class="icon-globe2"></i><a href="http://www.tygtal.com">www.tygtal.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="message-box col-md-6 animate-box">
+                            <h3 class="section-title">Leave us a message</h3>
+                            <div class="row">
+                                <form id="message_form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="messageName" class="form-control" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" name="messageEmail" class="form-control" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="messageBody" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="submit" value="Send Message" class="btn btn-primary">
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                    </form>
+                        <form method="POST" id="hidden_message_form" action="https://formspree.io/frajman.ran@gmail.com">
+                            <input type="email" name="email">
+                            <textarea name="message"></textarea>
+                        </form>
+                    </div>
                 </div>
             </div>
             <!-- END fh5co-contact -->
@@ -147,7 +156,7 @@
                                 <h3 class="section-title">Our Address</h3>
                                 <ul class="contact-info">
                                     <li><i class="icon-map-marker"></i>215 Hembree Park Dr #145, Roswell, GA 30076</li>
-                                    <li><i class="icon-phone"></i>(678) 761-7727</li>
+                                    <li><i class="icon-phone"></i><a href="tel:+6787617727">(678) 761-7727</a></li>
                                     <li><i class="icon-envelope"></i><a href="mailto:tygtalperformance@gmail.com">tygtalperformance@gmail.com</a></li>
                                     <li><i class="icon-globe2"></i><a href="http://www.tygtal.com">www.tygtal.com</a></li>
                                 </ul>
@@ -156,11 +165,9 @@
                         <div class="row copy-right">
                             <div class="col-md-6 col-md-offset-3 text-center">
                                 <p class="fh5co-social-icons">
-                                    <a href="#"><i class="icon-twitter2"></i></a>
-                                    <a href="#"><i class="icon-facebook2"></i></a>
-                                    <a href="#"><i class="icon-instagram"></i></a>
-                                    <a href="#"><i class="icon-dribbble2"></i></a>
-                                    <a href="#"><i class="icon-youtube"></i></a>
+                                    <a target="_blank" href="https://www.facebook.com/tygtalsports/"><i class="icon-facebook2"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/tygtal_sports/"><i class="icon-instagram"></i></a>
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCv44glt1v02brf8BWZs1LKw"><i class="icon-youtube"></i></a>
                                 </p>
                                 <p>Copyright 2018 Ran Frajman. All Rights Reserved.</p>
                             </div>
@@ -168,6 +175,7 @@
                     </div>
                 </div>
             </footer>
+            <a class="callus hidden-lg hidden-md" href="tel:+6787617727" title="call us"></a>
         </div>
         <!-- END fh5co-page -->
 

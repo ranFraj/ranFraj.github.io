@@ -208,7 +208,7 @@ figure {
 }
 @media screen and (max-width: 480px) {
   .program-box {
-    margin: 0 0 8% 0;
+    margin: 10px 10px 20px 10px;
   }
 }
 .program-box p.title {
@@ -236,6 +236,7 @@ figure {
 }
 .program-box .learn {
   margin: 20px 0 20px 0;
+  width: auto !important;
 }
 .program-box .pricing {
   margin-top: 40px;
@@ -358,7 +359,7 @@ figure {
 
 #balls-section {
   background-image: url(../images/balls.jpg);
-  background-position: 80%;
+  background-position: top left;
   text-align: center;
   margin-top: 40px;
 }
@@ -369,6 +370,11 @@ figure {
   color: #fff;
   padding: 10%;
   font-size: 30px;
+}
+@media screen and (max-width: 480px) {
+  #balls-section {
+    background-size: 80%;
+  }
 }
 
 /* Superfish Override Menu */
@@ -841,7 +847,7 @@ figure {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 20px;
   background: black;
   opacity: 0.2;
 }
@@ -973,6 +979,7 @@ figure {
 .team-section-grid {
   position: relative;
   background-size: cover;
+  background-position: top center;
   height: 450px;
   margin-bottom: 30px;
   overflow: hidden;
@@ -1016,7 +1023,7 @@ figure {
 }
 .team-section-grid .overlay-section .desc {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   right: 0;
   padding: 30px;
@@ -1072,11 +1079,26 @@ figure {
 #fh5co-contact .form-control:focus, #fh5co-contact .form-control:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
-#fh5co-contact input[type=text] {
+#fh5co-contact input[type=text],
+#fh5co-contact input[type=email] {
   height: 50px;
 }
 #fh5co-contact .form-group {
   margin-bottom: 30px;
+}
+#fh5co-contact .invalid-input {
+  border: gray 2px solid;
+  position: absolute;
+  display: inline-block;
+  padding: 5px 10px;
+  z-index: 1;
+  background-color: white;
+  color: red;
+  font-weight: bold;
+  right: 0;
+}
+#fh5co-contact #hidden_message_form {
+  display: none;
 }
 
 .section-title {
@@ -1594,6 +1616,18 @@ figure {
   position: absolute;
   left: 100px;
   top: 0;
+}
+
+.callus {
+  background: url(../images/callus.png);
+  background-size: 64px;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  z-index: 9999;
+  right: 10px;
+  bottom: 10px;
+  border-style: none;
 }
 
 .fh5co-loader {
