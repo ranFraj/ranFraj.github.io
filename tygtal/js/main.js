@@ -34,7 +34,11 @@
 
     // Parallax
     var parallax = function() {
-        $(window).stellar({ horizontalScrolling: false });
+        var ua = navigator.userAgent,
+            isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
+        if (!isMobileWebkit) {
+            $(window).stellar({ horizontalScrolling: false });
+        }
     };
 
 
