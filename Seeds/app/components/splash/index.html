@@ -1,4 +1,27 @@
-<div id="splash" class="component">
-    <h1>Splash!!!</h1>
-    <button onclick="app.current.code.next()">Next</button>
+<div id="splash" class="component splash-screen hidden">
+    <div class="splash-holder">
+        <svg height="300" width="300" xmlns="http://www.w3.org/2000/svg" class="splash-svg">
+            <circle class="circle" cx="155" cy="155" r="140">
+            </svg>
+        <img class="icon logo" src="assets/logo.png" alt="Seeds of growth logo" />
+        <img class="icon leaf" src="assets/leaf.png" alt="Seeds of growth logo" />
+        <div class="splash-title">
+            <h2>Seeds of Growth</h2>
+            <span></span>
+        </div>
+    </div>
 </div>
+<script>
+    const splash = new app.current.code.AppSplash(false);
+    //if auto dismiss set to false, run splash.dismiss()
+
+    $(document).ready(() => {
+        window.addEventListener(splash.events.ready, () => {
+            setTimeout(app.current.code.next, 1000);
+        });
+        /*window.addEventListener(splash.events.dismissed, () => {
+            console.log('Splash is dismissed');
+        });*/
+        splash.show();
+    });
+</script>
