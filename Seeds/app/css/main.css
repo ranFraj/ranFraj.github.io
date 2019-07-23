@@ -1,0 +1,17 @@
+@font-face {
+    font-family: amdocs;
+    src: url('fonts/SourceSansPro-Regular.otf.woff'), url('fonts/SourceSansPro-Regular.otf.woff') format('woff');
+}
+
+body {
+    margin: 0;
+    font-family: amdocs;
+}
+
+#root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
