@@ -15,12 +15,12 @@
         </div>
         <div class="contorls">
             <div class="float-left">
-                <button class="myButton"><i class="fas fa-thumbs-up"></i> Like</button>
+                <button class="myButton value-{liked}" onclick="app.current.code.toggleChecked(this)"><i class="fas fa-thumbs-up"></i> Like</button>
                 <button class="myButton"><i class="fas fa-share-alt"></i> Share</button>
             </div>
             <div class="float-right">
-                <button class="myButton"><i class="fas fa-star"></i></button>
-                <button class="myButton"><i class="fas fa-check"></i></button>
+                <button class="myButton value-{favorite}" onclick="app.current.code.toggleChecked(this)"><i class="fas fa-star"></i></button>
+                <button class="myButton value-{watched}" onclick="app.current.code.toggleChecked(this)"><i class="fas fa-check"></i></button>
             </div>
         </div>
     </div>

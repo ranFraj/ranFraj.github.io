@@ -32,6 +32,10 @@ app.current.code = {
             content.append(html);
         }
     },
+    toggleChecked: (button) => {
+        $(button).toggleClass('value-true');
+
+    },
     run: () => {
         setTimeout(app.current.code.loadSeeds, 1000);
     }

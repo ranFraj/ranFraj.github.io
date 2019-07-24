@@ -157,3 +157,7 @@ header h1::before {
 .videoHolder video {
     width: 100%;
 }
+
+.value-true {
+    color: yellow;
+}
