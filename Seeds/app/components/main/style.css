@@ -1,7 +1,89 @@
 #main {
-    background-color: blue;
+    background-color: #dfe1df;
 }
 
-#main h1 {
-    color: green;
+header {
+    height: 60px;
+    background-color: #302e45;
+    text-align: center;
+    line-height: 60px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+header h1::before {
+    background-image: url(../../assets/logo.png);
+    width: 26px;
+    height: 25px;
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.hamburger {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.hamburger button {
+    clear: all;
+    font-size: 26px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.hamburger button:active {
+    position: relative;
+    top: 1px;
+}
+
+.menu-back {
+    height: 100%;
+}
+
+.menu-back.hidden {
+    display: none;
+}
+
+.menu {
+    border-top-style: none;
+    border-left-style: none;
+    background-color: #555063;
+    display: inline-block;
+    border-radius: 0 0 15px 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    line-height: 40px;
+}
+
+.menu li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a i {
+    font-size: 20px;
+    margin-right: 10px;
 }

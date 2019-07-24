@@ -1,5 +1,18 @@
 <div id="main" class="component out">
-    <h1>MAIN</h1>
-    <button onclick="app.current.code.next()">Upload</button>
-    <button onclick="app.back()">Back</button>
+    <header>
+        <h1>Seeds of Growth</h1>
+        <div class="hamburger">
+            <button onclick="app.current.code.toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <div class="menu-back hidden" onmousedown="app.current.code.menuBackClick(event)">
+        <div class="menu" onmousedown="app.current.code.menuClick(event)">
+            <ul>
+                <li><a href="#"><i class="fas fa-leaf"></i>Plant a seed</a></li>
+                <li><a href="#"><i class="fas fa-star"></i>My seeds</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
