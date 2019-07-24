@@ -1,16 +1,5 @@
 .myButton {
-    -moz-box-shadow: inset 0px 1px 0px 0px #f49ac1;
-    -webkit-box-shadow: inset 0px 1px 0px 0px #f49ac1;
-    box-shadow: inset 0px 1px 0px 0px #f49ac1;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eC008c), color-stop(1, #f067a6));
-    background: -moz-linear-gradient(top, #eC008c 5%, #f067a6 100%);
-    background: -webkit-linear-gradient(top, #eC008c 5%, #f067a6 100%);
-    background: -o-linear-gradient(top, #eC008c 5%, #f067a6 100%);
-    background: -ms-linear-gradient(top, #eC008c 5%, #f067a6 100%);
-    background: linear-gradient(to bottom, #eC008c 5%, #f067a6 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#eC008c', endColorstr='#f067a6', GradientType=0);
-    background-color: #eC008c;
-    border: 1px solid #314179;
+    background-color: #7f7989;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
@@ -19,17 +8,12 @@
     font-weight: bold;
     padding: 6px 12px;
     text-decoration: none;
+    border: none;
+    border-radius: 3px;
 }
 
 .myButton:hover {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f067a6), color-stop(1, #eC008c));
-    background: -moz-linear-gradient(top, #f067a6 5%, #eC008c 100%);
-    background: -webkit-linear-gradient(top, #f067a6 5%, #eC008c 100%);
-    background: -o-linear-gradient(top, #f067a6 5%, #eC008c 100%);
-    background: -ms-linear-gradient(top, #f067a6 5%, #eC008c 100%);
-    background: linear-gradient(to bottom, #f067a6 5%, #eC008c 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f067a6', endColorstr='#eC008c', GradientType=0);
-    background-color: #f067a6;
+    background-color: #555063;
 }
 
 .myButton:active {
