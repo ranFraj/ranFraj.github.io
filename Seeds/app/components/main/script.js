@@ -18,7 +18,21 @@ app.current.code = {
             menu.show();
         }
     },
+    loadSeeds: () => {
+        const content = $('.content');
+        const template = $('#seed_template');
+        for (let seed of db.seeds) {
+            const seedBox = template.clone();
+            let html = seedBox.html();
+            for (let key in seed) {
+                if (seed.hasOwnProperty(key)) {
+                    html = html.replaceAll(`{${key}}`, seed[key]);
+                }
+            }
+            content.append(html);
+        }
+    },
     run: () => {
-        console.log('main running');
+        setTimeout(app.current.code.loadSeeds, 1000);
     }
 }
