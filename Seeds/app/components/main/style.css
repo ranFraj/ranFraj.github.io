@@ -31,7 +31,13 @@ header h1::before {
     left: 10px;
 }
 
-.hamburger button {
+.search {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.header-icon button {
     clear: all;
     font-size: 26px;
     background-color: transparent;
@@ -39,20 +45,42 @@ header h1::before {
     border: none;
 }
 
-.hamburger button:active {
+.header-icon button:active {
     position: relative;
     top: 1px;
 }
 
-.menu-back {
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+.menu-back,
+.search-panel {
     position: absolute;
     z-index: 999;
     width: 100%;
+    height: 100%;
 }
 
-.menu-back.hidden {
+.search-panel p {
+    margin: 0;
+}
+
+.searchbox-holder {
+    background-color: #302e45;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.searchbox-holder input {
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.menu-back,
+.search-panel {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
     display: none;
 }
 
@@ -160,4 +188,13 @@ header h1::before {
 
 .value-true {
     color: yellow;
+}
+
+.tags {
+    text-align: right;
+    margin: -10px 0 20px 0;
+}
+
+.tags .tag {
+    margin-left: 10px;
 }

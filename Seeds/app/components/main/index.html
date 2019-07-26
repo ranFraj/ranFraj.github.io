@@ -13,6 +13,9 @@
                 </video>
             <div class="videoLikes">{likes} <i class="fas fa-thumbs-up"></i></div>
         </div>
+        <div class="tags">
+            {tags}
+        </div>
         <div class="contorls">
             <div class="float-left">
                 <button class="myButton value-{liked}" data-seed="{id}" data-prop="liked" onclick="app.current.code.toggleChecked(this);"><i class="fas fa-thumbs-up"></i> Like</button>
@@ -28,17 +31,26 @@
 <div id="main" class="component out">
     <header>
         <h1>Seeds of Growth</h1>
-        <div class="hamburger">
+        <div class="header-icon hamburger">
             <button onclick="app.current.code.toggleMenu()"><i class="fas fa-bars"></i></button>
         </div>
+        <div class="header-icon search">
+            <button onclick="app.current.code.toggleSearch()"><i class="fas fa-search"></i></button>
+        </div>
     </header>
+    <div class="search-panel hidden" onmousedown="app.current.code.toggleSearch()">
+        <div class="searchbox-holder" onmousedown="app.current.code.menuClick(event)">
+            <input type="text">
+            <p>Search for tags or users</p>
+        </div>
+    </div>
     <div class="menu-back hidden" onmousedown="app.current.code.menuBackClick(event)">
         <div class="menu" onmousedown="app.current.code.menuClick(event)">
             <ul>
                 <li><a href="#" onclick="javascript:app.current.code.upload(event)"><i class="fas fa-leaf"></i>Plant a seed</a></li>
                 <li><a href="#"><i class="fas fa-star"></i>My seeds</a></li>
                 <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
-                <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="#" onclick="javascript:app.current.code.about(event)"><i class="fas fa-info-circle"></i>About</a></li>
             </ul>
         </div>
     </div>

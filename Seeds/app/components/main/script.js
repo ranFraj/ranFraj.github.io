@@ -1,10 +1,18 @@
 app.current.code = {
+    loadComponent: (componentName) => {
+        const component = new Component(componentName, `./components/${componentName}`);
+        app.setComponent(component);
+        app.run();
+    },
     upload: (e) => {
         e.preventDefault();
         app.current.code.toggleMenu();
-        const component = new Component('upload', './components/upload');
-        app.setComponent(component);
-        app.run();
+        app.current.code.loadComponent('upload');
+    },
+    about: (e) => {
+        e.preventDefault();
+        app.current.code.toggleMenu();
+        app.current.code.loadComponent('about');
     },
     menuBackClick: (e) => {
         $('.menu-back').hide();
@@ -20,6 +28,24 @@ app.current.code = {
             menu.show();
         }
     },
+    toggleSearch: () => {
+        const button = $('.header-icon.search i');
+        const search = $('.search-panel');
+        if (search.is(':visible')) {
+            search.hide();
+        } else {
+            search.show();
+            search.find('input').focus();
+        }
+        button.toggleClass('fa-times');
+    },
+    parseTags: (tags) => {
+        let html = '';
+        for (let tag of tags) {
+            html += `<a class="tag" href="${tag}">${tag}</a>`
+        }
+        return html;
+    },
     loadSeeds: () => {
         const content = $('.content');
         const template = $('#seed_template');
@@ -27,8 +53,12 @@ app.current.code = {
             const seedBox = template.clone();
             let html = seedBox.html();
             for (let key in seed) {
+                let data = seed[key];
                 if (seed.hasOwnProperty(key)) {
-                    html = html.replaceAll(`{${key}}`, seed[key]);
+                    if (key === 'tags' && Array.isArray(data) && data.length > 0) { //tags
+                        data = app.current.code.parseTags(data);
+                    }
+                    html = html.replaceAll(`{${key}}`, data);
                 }
             }
             content.append(html);

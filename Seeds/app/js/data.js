@@ -9,7 +9,8 @@ const db = {
             likes: 22,
             liked: true,
             favorite: false,
-            watched: true
+            watched: true,
+            tags: ['#amdocs', '#lego', '#5G', '#work']
         },
         {
             id: "24ff4f49",
@@ -21,7 +22,8 @@ const db = {
             likes: 6,
             liked: false,
             favorite: true,
-            watched: false
+            watched: false,
+            tags: ['#fun', '#bunny', '#cartoon']
         }
     ]
 };
