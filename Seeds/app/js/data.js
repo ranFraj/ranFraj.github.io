@@ -1,5 +1,6 @@
 const db = {
     seeds: [{
+            id: "e3d0216c",
             image: "ranN.jpg",
             name: "Ran Nahum",
             date: "Jul 23 2019",
@@ -11,6 +12,7 @@ const db = {
             watched: true
         },
         {
+            id: "24ff4f49",
             image: "ranF.jpg",
             name: "Ran Frajman",
             date: "Jul 24 2019",

@@ -15,12 +15,12 @@
         </div>
         <div class="contorls">
             <div class="float-left">
-                <button class="myButton value-{liked}" onclick="app.current.code.toggleChecked(this)"><i class="fas fa-thumbs-up"></i> Like</button>
+                <button class="myButton value-{liked}" data-seed="{id}" data-prop="liked" onclick="app.current.code.toggleChecked(this);"><i class="fas fa-thumbs-up"></i> Like</button>
                 <button class="myButton"><i class="fas fa-share-alt"></i> Share</button>
             </div>
             <div class="float-right">
-                <button class="myButton value-{favorite}" onclick="app.current.code.toggleChecked(this)"><i class="fas fa-star"></i></button>
-                <button class="myButton value-{watched}" onclick="app.current.code.toggleChecked(this)"><i class="fas fa-check"></i></button>
+                <button class="myButton value-{favorite}" data-seed="{id}" data-prop="favorite" onclick="app.current.code.toggleChecked(this)"><i class="fas fa-star"></i></button>
+                <button class="myButton value-{watched}" data-seed="{id}" data-prop="watched" onclick="app.current.code.toggleChecked(this)"><i class="fas fa-check"></i></button>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
     <div class="menu-back hidden" onmousedown="app.current.code.menuBackClick(event)">
         <div class="menu" onmousedown="app.current.code.menuClick(event)">
             <ul>
-                <li><a href="#"><i class="fas fa-leaf"></i>Plant a seed</a></li>
+                <li><a href="#" onclick="javascript:app.current.code.upload(event)"><i class="fas fa-leaf"></i>Plant a seed</a></li>
                 <li><a href="#"><i class="fas fa-star"></i>My seeds</a></li>
                 <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
                 <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>

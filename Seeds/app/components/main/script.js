@@ -1,9 +1,11 @@
 app.current.code = {
-    /*next: () => {
+    upload: (e) => {
+        e.preventDefault();
+        app.current.code.toggleMenu();
         const component = new Component('upload', './components/upload');
         app.setComponent(component);
         app.run();
-    },*/
+    },
     menuBackClick: (e) => {
         $('.menu-back').hide();
     },
@@ -33,8 +35,11 @@ app.current.code = {
         }
     },
     toggleChecked: (button) => {
-        $(button).toggleClass('value-true');
-
+        const btn = $(button);
+        btn.toggleClass('value-true');
+        const value = btn.hasClass('value-true');
+        db.seeds.find(seed => { return seed.id === btn.data('seed'); })[btn.data('prop')] = value;
+        console.log(db.seeds);
     },
     run: () => {
         setTimeout(app.current.code.loadSeeds, 1000);
