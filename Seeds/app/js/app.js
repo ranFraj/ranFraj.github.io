@@ -1,7 +1,6 @@
 class App {
-    components = [];
     constructor(root) {
-
+        this.components = [];
         this.container = root;
         if (!this.container || this.container.length === 0) {
             throw new Error('App container is missing or invalid');
