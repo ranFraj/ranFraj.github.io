@@ -1,0 +1,66 @@
+body {
+    font-family: "Comic Sans MS";
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.nav-btn {
+    all: unset;
+    position: absolute;
+    background-color: #282828;
+    height: 100%;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.nav-btn.right {
+    right: 0;
+}
+
+.nav-btn:hover {
+    background-color: #4a4a4a;
+}
+
+.letter {
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.letter-box {
+    display: inline-block;
+    font-size: 300px;
+    cursor: pointer;
+}
+
+.capital,
+.randomLetter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.capital {
+    top: 0;
+}
+
+.randomLetter {
+    bottom: 0;
+}
