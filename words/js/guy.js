@@ -28,7 +28,7 @@ function prev() {
     if (randomcheckbox.prop("checked")) {
         letterIndex = Math.floor(Math.random() * letters.length);
     } else {
-        letterIndex++;
+        letterIndex--;
         if (letterIndex < 0) {
             letterIndex = letters.length - 1;
         }
