@@ -1,15 +1,33 @@
-var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var letters = [];
 var letterIndex = -1;
 var box = $('.letter-box');
 var randomcheckbox = $('#randomLetter');
 var capitalcheckbox = $('#capital');
 
-function showLetter(l) {
+function showLetter() {
     var l = letters[letterIndex];
     if (capitalcheckbox.prop("checked")) {
         l = l.toUpperCase();
     }
     box.text(l);
+}
+
+function setLetters() {
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    letterIndex = 0;
+    showLetter();
+}
+
+function setLevel3() {
+    letters = ['the', 'my', 'here', 'is', 'one', 'two', 'are', 'you', 'no', 'go', 'so', 'she', 'he', 'we', 'me', 'be'];
+    letterIndex = 0;
+    showLetter();
+}
+
+function setLevel5() {
+    letters = ['to', 'all', 'where', 'what', 'they', 'blue', 'do', 'was', 'black', 'said', 'yellow', 'there', 'three', 'who', 'brown', 'four', 'has', 'green', 'come', 'down'];
+    letterIndex = 0;
+    showLetter();
 }
 
 function next() {
@@ -48,4 +66,4 @@ function play() {
     }
 }
 
-$(document).ready(next);
+$(document).ready(setLetters());

@@ -24,6 +24,21 @@ body {
     font-size: 30px;
 }
 
+.header {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    height: 60px;
+    background-color: blue;
+    display: flex;
+    z-index: 1;
+}
+
+.header button {
+    width: 33.3%;
+}
+
 .nav-btn.right {
     right: 0;
 }
@@ -58,7 +73,7 @@ body {
 }
 
 .capital {
-    top: 0;
+    top: 65px;
 }
 
 .randomLetter {
