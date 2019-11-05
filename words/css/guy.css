@@ -1,5 +1,5 @@
 body {
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     background-color: black;
     color: white;
     font-size: 18px;
@@ -37,6 +37,7 @@ body {
 
 .header button {
     width: 33.3%;
+    height: 100%;
 }
 
 .nav-btn.right {
@@ -60,7 +61,7 @@ body {
 
 .letter-box {
     display: inline-block;
-    font-size: 300px;
+    font-size: 60vh;
     cursor: pointer;
 }
 
