@@ -30,7 +30,6 @@ body {
     left: 50px;
     right: 50px;
     height: 60px;
-    background-color: blue;
     display: flex;
     z-index: 1;
 }
@@ -61,7 +60,7 @@ body {
 
 .letter-box {
     display: inline-block;
-    font-size: 60vh;
+    font-size: 10vh;
     cursor: pointer;
 }
 
