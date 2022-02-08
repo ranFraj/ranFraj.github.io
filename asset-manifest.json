@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/guy-math/static/css/main.8f5f6a5e.css",
+    "main.js": "/guy-math/static/js/main.41725bce.js",
+    "static/js/787.df262fe2.chunk.js": "/guy-math/static/js/787.df262fe2.chunk.js",
+    "index.html": "/guy-math/index.html",
+    "static/media/heart.svg": "/guy-math/static/media/heart.efd7668b53071e82238da67e09ce0453.svg",
+    "main.8f5f6a5e.css.map": "/guy-math/static/css/main.8f5f6a5e.css.map",
+    "main.41725bce.js.map": "/guy-math/static/js/main.41725bce.js.map",
+    "787.df262fe2.chunk.js.map": "/guy-math/static/js/787.df262fe2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f5f6a5e.css",
+    "static/js/main.41725bce.js"
+  ]
+}
